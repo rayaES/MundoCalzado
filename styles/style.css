@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.all {
+    background-color: #1c1c1c;
+}
+
+
+/*- HEADER -*/
+
+.header {
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:#1c1c1c;
+}
+
+.icon {
+    height: 30px;
+    margin: auto 0px;
+    transform: scale(1.5);
+}
+
+.header h1 {
+    font-size: 28px;
+    font-family: Arial Black;
+    color: white;
+    margin-right: auto;
+    margin-left: 23px;
+}
+
+.header ul {
+    list-style: none;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.header li p {
+    display: inline;
+}
+
+.header li {
+    color: #6ea8fe;
+    margin: auto 10px;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header a {
+    color: #6ea8fe;
+}
+
+#sel-id {
+    color: #c7deff
+}
+
+    /*Carrito*/
+    #carShop{
+        position: relative;
+    }
+    .conteoProducts{
+        padding-left: 1px;
+        padding-top: 1px;
+        background-color: #1c1c1c;
+        font-size: 13px;
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+    }
+
+
+
+/*INDEX*/
+        /*Fixed*/
+
+.buySection {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c8e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buyDiv {
+    display: flex;
+    background-color: #fdfdfd;
+}
+
+.imgZapato img{
+    height: 90vh;
+}
+
+
+.descProduct {
+    background-color: #fdfdfd;
+    padding: 30px;
+}
+.descProduct .titleBuy {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 7px;
+    max-width: 200px;
+}
+.descProduct input, .descProduct select {
+    margin: 4px 0 18px 0;
+}
+.precioBuy {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.subTitle {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.desplegable {
+    width: 100%;
+    border: 0;
+    color: #fff;
+    background-color: #1b1b1b;
+    padding: 8px;
+    outline: none;
+    transition: all .5s;
+}
+.cantProduct {
+    width: 100%;
+}
+
+.botonShop {
+    border-radius: 50px;
+    border: 0;
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 10px;
+    color: rgb(132, 132, 132);
+    cursor: not-allowed;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.close {
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+.banner {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.banner-cont button {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+
+    background-color: white;
+    color: rgb(31, 31, 31);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 22px;
+    border: 0;
+    border-radius: 30px;
+}
+.banner-cont button:hover {
+    cursor: pointer;
+    background-color: rgb(201, 201, 201);
+}
+
+@keyframes o {
+    0% {
+        transform: scale(0.9);
+    }
+    15% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.tiendaSeccion {
+    padding: 30px 60px;
+    background-color: white;
+}
+.tiendaSeccion h2 {
+    margin: 20px 0px;
+    color: #1b1b1b;
+    font-size: 30px;
+}
+.tiendaSeccion h2 a {
+    color: rgb(0, 63, 146);
+    margin: 0 10px;
+    font-size: 20px;
+}
+.tiendaSeccion h3 {
+    margin: 20px 0px;
+    color: #1b1b1b;
+    font-size: 20px;
+}
+.tiendaSeccion img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* CUADROS DE PRODUCTOS */
+.multVenta {
+    display: flex;
+    align-items: center;
+    margin: 10px auto 0px auto;
+    
+    flex-wrap: wrap;
+}
+.cuadMolde {
+    background-color: #ffffff;
+    cursor: pointer;
+    width: 280px;
+    height: 400px;
+    margin: 10px;
+}
+
+.divDesc {
+    margin: 0px 15px;
+    padding: 15px 0px;
+}
+.cuadMolde p {
+    margin: 10px;
+    color: #454545;
+}
+.title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.cuadMolde .desc {
+    font-size: 18px;
+}
+.cuadMolde .desc::before, .precioBuy::before {
+    content: '$ '
+}
+
+.divImg {
+    background-color: white;
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.imgE {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition-duration: 400ms;
+}
+
+/*ACERCA DE*/
+.acercaDe {
+    padding: 20px 70px;
+}
+
+.aboutSect {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.imgDesc {
+    width: 66%;
+    height: 70vh;
+}
+.aboutDesc {
+    width: 32%;
+}
+.aboutDesc h3 {
+    font-size: 34px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.aboutDesc p {
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.texto ul {
+    color: rgb(88, 88, 88)
+}
+
+.text-about {
+    width: 40%;
+    padding: 2% 5%;
+    position: relative;
+    left: 20px;
+}
+
+
+/*CAR ZONA*/
+#shopCar {
+    transition: all 2s;
+    background:#fff;
+    width: 100%;
+    height: 60vh;
+    display: block;
+    text-align: center;
+    padding: 50px 0;
+}
+
+table {
+    margin: 20px auto;
+}
+
+th {
+    padding: 0px 40px;
+    font-weight: lighter;
+}
+.encabezado th {
+    font-weight: bold;
+}
+.celLong {
+    width: 200px;
+}
+
+
+/*--------*/
+/*CONTACTO*/
+/*--------*/
+
+.iframeMaps {
+    width: 90%;
+    height: 350px;
+    border: 0;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contactDiv {
+    background-color: white;
+    padding: 30px 70px;
+}
+.contactDiv h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.diviComunica {
+    display: flex;
+}
+.indContact {
+    display: flex;
+    margin: 10px 50px 15px 0
+}
+.iconContact {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.descInd p {
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+    /*Formulario*/
+    .contactForm p {
+        font-size: 26px;
+        font-weight: bold;
+        color: rgb(32, 32, 32);
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .input {
+        width: 400px;
+        height: 40px;
+        border: #c4c4c4 1px solid;
+        border-radius: 5px;
+        background-color: #e4e4e4;
+        display: block;
+        margin: 15px auto;
+        padding-left: 10px;
+    
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(31, 31, 31);
+        transition: height .3s
+    }
+    .input:focus {
+        border-color: #af2020;
+        outline: none;
+    }
+    
+    .button {
+        width: 100px;
+        height: 30px;
+        display: block;
+        margin: 10px auto;
+    
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(31, 31, 31);
+        transition: height .3s
+    }
+    #textarea {
+        resize: none;
+        padding-top: 10px;
+    }
+    
+    #textarea:focus {
+        height: 90px;
+        border-color: #af2020;
+    }
+    
+
+/*FOOTER*/
+.Footer {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+}
+.footer-text {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.divFoot {
+    margin: 0 30px;
+}
+
+.divFoot h3 {
+    color:#dbdbdb;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+.divFoot a {
+    color: #838383;
+    margin: 7px 0;
+    display: block;
+}
+.divFoot a:hover {
+    text-decoration: underline;
+}
+
+.redesSociales {
+    float: right;
+}
+.imgIcon a {
+    margin: 5px;
+    display: block;
+}
+.imgIcon {
+    display: block;
+    filter: grayscale(.7);
+    transition-duration: .4s;
+}
+.imgIcon:hover {
+    filter: grayscale(0);
+}
+
+.marcaAgua {
+    font-size: 12px;
+    color: #838383;
+    text-align: center;
+    margin-top: 10px;
+}
+.marcaAgua b {
+    color:#9f9f9f;
+    margin-right: 9px;
+}
